@@ -3,6 +3,10 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "build": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile ./dist/screenshoter"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
@@ -10,7 +14,9 @@
     "typescript": "^5"
   },
   "dependencies": {
+    "chromium-bidi": "^3.2.1",
     "commander": "^13.1.0",
+    "electron": "^35.1.4",
     "playwright": "^1.51.1"
   }
 }
