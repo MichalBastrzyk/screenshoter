@@ -1,4 +1,3 @@
-#!/usr/bin/env bun
 import { Command } from "commander";
 import { chromium, type Browser, type Page } from "playwright";
 import fs from "fs";
